@@ -138,7 +138,7 @@ const Submission = ({ data }) => {
                 >
                   StdOut:
                 </p>
-                <pre style={{ color: 'white' }}>{data.stdin.trim()}</pre>
+                <pre style={{ color: 'white' }}>{stdOut.trim()}</pre>
               </div>
             )}
           </div>
