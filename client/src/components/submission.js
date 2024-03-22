@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Submission = ({ data }) => {
   const [minimized, setMinimized] = useState(true)
@@ -51,8 +53,10 @@ const Submission = ({ data }) => {
       const stdData = subRes.data.stdout
       console.log(subRes)
       setStdOut(stdData);
+      // toast.success('Your code has been executed successfully')
     } catch (error) {
       console.log(error)
+      // toast.error('Oops something went wrong !!')
     }
   }
   return (
@@ -129,6 +133,7 @@ const Submission = ({ data }) => {
 
             {stdOut && (
               <div>
+                {/* <ToastContainer /> */}
                 <p
                   style={{
                     fontSize: '15px',

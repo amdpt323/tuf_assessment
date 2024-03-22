@@ -18,7 +18,7 @@ const MakeSubmissions = () => {
     const username = e.target.elements.username.value
     const code = e.target.elements.code.value
     const stdin = e.target.elements.stdin.value 
-    if(username === '' || code==='' || stdin==='' || lang===''){
+    if(username === '' || code==='' || lang===''){
       toast.warn('Please fill all the fields')
     }else{
 

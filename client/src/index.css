@@ -57,7 +57,7 @@ code {
 
 
 
-codeContainer: {
+codeContainer{
     white-space: 'pre-wrap';
     font-family: 'Courier New, Courier, monospace';
     padding: '10px';
